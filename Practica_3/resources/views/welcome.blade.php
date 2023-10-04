@@ -2,5 +2,12 @@
 @section('titulo','Home')
 @section('contenido')
     <h1 class="display-1 text-center text-info">Home</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <x-message message="Bienvenidos a Laravel" date="febrero 2022"></x-message>
+
 @endsection
 
