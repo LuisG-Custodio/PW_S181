@@ -4,10 +4,17 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\diarioController;
 
-Route::get('/', [diarioController::class,'metodoInicio'])->name('apodoinicio');
+//Rutas individuales
+/* Route::get('/', [diarioController::class,'metodoInicio'])->name('apodoinicio');
 Route::get('/form', [diarioController::class,'metodoFormulario'])->name('apodoformulario');
-Route::get('/recuerdos', [diarioController::class,'metodoRecuerdos'])->name('apodorecuerdos');
+Route::get('/recuerdos', [diarioController::class,'metodoRecuerdos'])->name('apodorecuerdos'); */
 
+//Rutas agrupadas
+Route::controller(diarioController::class)->group(function(){
+    Route::get('/','metodoInicio')->name('apodoinicio');
+    Route::get('/form','metodoFormulario')->name('apodoformulario');
+    Route::get('/recuerdos','metodoRecuerdos')->name('apodorecuerdos');
+});
 
 /* Route::view('/', 'welcome')->name('apodoinicio');
 Route::view('/form', 'formulario')->name('apodoformulario');
