@@ -19,4 +19,7 @@ class diarioController extends Controller
         return view('recuerdos');
     }
 
+    public function guardadoRecuerdo(Request $req){
+        return 'Se esta procesando tu recuerdo';
+    }
 }
