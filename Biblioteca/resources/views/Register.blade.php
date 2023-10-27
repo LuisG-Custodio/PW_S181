@@ -5,7 +5,7 @@
 <div class="container">
     <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Register new book</h5>
+          <h5 class="card-title fs-2 text-primary">Register new book</h5>
           <p class="card-text">
             @include('partials.form')
           </p>

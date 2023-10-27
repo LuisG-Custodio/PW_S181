@@ -11,9 +11,12 @@
     
 
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     @include('partials.navbar')
     @yield('content')
-    @include('partials.footer')
+    
 </body>
+<footer class="mt-auto">
+    @include('partials.footer')
+</footer>
 </html>
