@@ -23,7 +23,7 @@ class validadorDiario extends FormRequest
     {
         return [
             'txtTitulo' => 'required|between:5,50',
-            'txtRecuerdo' => 'required|min:5',
+            'txtRecuerdo' => 'required|between:5,255',
         ];
     }
 }
